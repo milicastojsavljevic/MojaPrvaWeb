@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--
+	ovo je meta tag koji omogucava da moj sajt lepo izgleda na razlicitim velicinama ekrana. Responsive web design.-->
+	<title> Moja Prva Web Stranica WebKrozWeb</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	 <!--<script type="text/javascript" src="../jquery-3.2.1.js"></script> jQuery na mom kompu-->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- Ovo je google jquery/hosted libraries-->
+</head>
+<body>
+	<!-- ovako se pise tag na stranici &lt;tag&gt-->
+	<div id="header"><h1>Podsetnik za mene!!!</h1></div>
+	<div id="content">
+	<div id="glavno">
+	
+			<!--<div id="timer"></div>-->
+
+
+			<canvas id="canvas" width="100" height="100"
+				style="background-color:rgb(20, 129, 135);">
+			</canvas>
+
+
+			<div id="ime">MilicaS</div>
+
+			
+		
+	<h2>Šta mi je potrebno da napravim web stranu?!</h2><br>
+			<p>Iskoristiću pravljenje moje stranice da se podsetim svega što bi trebalo da sam naučila do sad.   
+			Ja sam prvo počela da učim sa <a href="https://www.codecademy.com/learn" target=_blank>codecademy</a> sajta, tu sam naučila prve tagove. To je interaktivan sajt, i meni se mnogo sviđa.<br>
+		 	Zatim sam otkrila tutorijale <a href="https://www.youtube.com/channel/UCjx-2wIo4275M6nHZIRUx0A" target="_blank">Danila Vešovića</a> i mnogo mi je drago zato što su odlični, pomogli su mi da razumem i da lakše učim. <br>
+		 	Trenutno najviše vremena provodim na sajtu <a href="https://www.w3schools.com/" target="_blank">w3schools</a>, tu je sve objašnjeno, lako se razume i za sve postoji primer. Odličan sajt! <br>Bitno je znati šta sve može da se uradi i ugradi, i gde može da se pronađe način kako da se to uradi! Postoji neki redosled, odakle početi učenje, kako? Ja sam za ovaj sajt koristila samo HTML, CSS, malo JavaScript i jQuery. Sada se trenutno malo bavi učenjem Php-a i mySQL-a. </p>
+	</div>
+<div id= "sporedno">
+
+	<div id="reklama1"><em><a class="link" href="https://www.codecademy.com/learn" target=_blank>codecademy</a></em></div>
+	<div id="reklama2"><em><a class="link" href="https://www.youtube.com/channel/UCjx-2wIo4275M6nHZIRUx0A" target="_blank">Danilo Vešović</a></em></div>
+	<div id="reklama3"><em><a class="link" href="https://www.w3schools.com/" target="_blank">w3schools</a></em></div>
+		</div>
+	</div> 
+	<div id="uvod">
+
+
+		 <h1>Ukratko!</h1><br><br>
+		 <div class="dodatak">
+				<h2>HTML</h2>
+<br>
+<p>Hyper Text Markup Language je zvaničan jezik web-a. To nije programski jezik nego <span>opisni</span> jezik. HTML koristi tagove,
+	<b> &lt;opening tag &gt </b>,
+	<b>&lt;/closing tag &gt</b> i 
+
+	 <b>&lt;self-closing tag/ &gt</b> ili <b>&lt;self-closing tag&gt</b> u html5.<br>
+	 Za svaki sajt ja mogu da vidim kod kojim je napisan, desni klik => page source ili => inspect.<br>
+	 Kodove pišem u nekom tekst editoru, ja najčešce koristim <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a>. Kad hoću da sačuvam neki dokument moram obavezno da mu promenim ekstenziju u dokument<b>.html</b> (.html i .htm kažu da je isto). Najbolje bi bilo da sve fajlove za jednu web stranu čuvam u istom folderu.<br>
+	 Pisanje jednog html fajla počinjem sa <b>&lt;!DOCTYPE html&gt</b>, a to znaži <q>ovaj dokument će biti html5</q>. Zatim obavezno idu html tagovi, to je root element, između kojih se nalazi head i body. U head-u se nalaze informacije za browser, kao što su tagovi za naslov, meta tagovi, style tag, script tag, linkovi ka css, js, jQuery, bootstrap,... <br>
+	 U body tag-u, tačnije između start i end taga, se nalazi sve ono što će biti prikazano na strani. Za sve što želim da prikažem na stranici postoji tag. Uz pomoć javaScript ja mogu da promenim tekst nekog elementa, document.getElementById<wbr>("idime").innerHTML("Novi tekst");. Sve je povezano!!!</p>
+	 
+	</div>
+	<br><div class="dodatak">
+
+				<h2>CSS</h2>
+				<br>
+<p>Cascading Stylesheet Language, je <span>stajling</span> jezik, kaskadni  zato što izvršava poslednju naredbu, tačnije prednost ima <q>najbiliži</q> inline style. Za svaki element u html-u postoji selektor u css-u,<br>
+<b>selector {<br> 
+	property:value; <br>}</b>.<br>
+ Css može biti eksternal (main.css), embeded (u head-u) i inline (za svaki tag posebno). Najbolje je koristiti eksterni, jer možda je nekad potrebno koristiti isti css za više html fajlova, link u head-u ovako izgleda<br>
+  &lt;link href="url ili path" rel="stylesheet" type="text/css"&gt .<br>
+   Ono što je dobro uraditi na početku je <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">reset css</a>, tako što ću sa sajta da preuzmem kod, ali ovako je jednostavnije *{padding:0; margin:0:}, mada sa tim se prestaje kada se koristi bootstrap. Za css je najbitnije shvatiti pozicioniranje elemenata, ali framework kao što je na primer bootstrap će sve to olakšati. </p>
+<p>Media queries, @media, služe za postavljanje css-a za različite veličine ekrana, ali i za to sad postoji pomoć, Responsive Web Design je zadužen za lep prikaz sajta na različitim veličinama ekrana. Css može da se menja uz pomoc JavaScript, document.getElementByTag<wbr>Name("ime").style.fontSize=<wbr>"nova vrednost";, ili na primer source nekog elementa document.getElementById<wbr>("ime").src="novi url";</p>
+</div>
+
+<br>
+<div class="dodatak">
+				<h2>Less i Sass</h2>
+				<br>
+<p>Javila se potreba da Css dobije svoju ekstenziju, svoje varijable i funkcije. Zato dolazi do <span><q>preprocessor</q></span> jezika kao što su less i sass. Oni se uz pomoć kompajlera prevode u Css. Sass je popularnije od less-a, a i scss je ok. Kako se linkuje? Main.less selector{property:value;}, sintaksa je ista, ali mora da se konvertuje u main.css. Na zvaničnom sajtu <a href="http://lesscss.org/" target="_blank">less</a> postoji instalacioni kod, $nmp install -g less, koji treba upisati u command prompt. Da bih to mogla da uradim moram da imam instaliran <b>node.js</b> i njegov comand prompt mi je potreban, koji ću pronaći u <q>search</q>. I onda, ima na stranici less-a, komanda koju treba da ukucam u command prompt $lessc style.less.<br>Prepros je program koji je za windows najbolji, čim <q>prevučem</q> folder u prepros on će sam naći ako postoji fajl koji treba da se kompajluje. Zvuči komplikovano, ali nije. Less olakšava i ubrzava stilizovanje.
+	Kako se koriste varijable u less-u?<br>
+ @div_color:blue;<br>
+	 div{background-color:div_color;}, e sad to ovako izgleda komplikovano, ali ja na više mesta mogu umesto boje da koristim varijablu, a kada želim da promenim boju ne moram da tražim u css-u gde sam sve postavila boju, dovoljno je da promenim boju u samoj varijabli i tako će biti promenjena boja gde god sam koristila tu varijablu.<br>
+	 Kroz node comand prompt se krećem isto kao i kroz command line, iste komande važe, cd - promeni direktorijum, dir- vidi šta sve ima na tom direktorijumu, lessc- kompajler za main.less u main.css (c:\\User\Milica\Desktop\less><wbr>lessc main.less main.css).<br>
+	 Kako se koriste funkcije u less-u?
+primer:<br>
+@bc:red;<br>
+.box{<br>background-color:@bc;<br>border: 5px solid darken(@bc, 20%);<br>
+}, to znači da ću darken() funkcijom postići da mi boja bude tamnija za 20% od boje koja je zabeležena u varijabli. U less-u mogu da se izmiksaju boje.<br>
+Sass je glavni prepros, otvori sass i instaliraj. Napravi fajl i prevuci ga do perepros i pronađi mesto gde želiš da ga kompajluješ. Sass ne koristi vitičaste zagrade{}, nego indent, uvlačenje teksta linija koda. Isto postoji pomoć pri kucanju, o tome u tekst editoru. <br><b>Kaže Danilo <q>Kad jednom uđes u tehniku kucanja sass ne vraćaš se više na css. :)</q></b><br> Napravi folder, otvori ga u editoru, ctrl + n da sačuvaš fajl kao index.html, pa tako i za main.sass. Otvori prepros koji koristiš i za less i prevucem main.sass, izaberem da mi ga kompajluje u istom folderu.<br>
+Paket za autocomplete u bracketsu se zove Brackets Sass Code Hints.</p>
+</div>
+
+<br>
+<div class="dodatak">	
+				<h2>Bootstrap</h2>
+<br>
+<p>Bootstrap je CSS <span><q>framework</q></span> (već napisan kod), koristi ga veliki procenat sajtova. Olakšava stilizovanje. Slogan bootstrap-a je <q>Mobile first</q>. Kako se koristi, mogu sa zvaničnog sajta da ga preuzmem ili linkom u head-u ka bootstrap-u bez da ga preuzimam. Sve što je potrebno jeste da koristim imena za klase koje koristi bootstrap i tako će izgledati ono sto je na mojoj strani isto kao što je stilizovao bootstrap. Lako je samo treba da se uvežba. Ja mogu i da prepravim nešto putem mog css-a ako želim, bootstrap mi ostaje u pozadini a za neki element dodam id i style koji ja želim da dodam ili izmenim. <br>
+	Greed options, znači, da svaki red ima 12 kolona, radi lakseg pozicioniranja elemenata.
+ Objašnjenje:<br>
+ &lt;div class="row"&gt
+<br>&lt;div class="col-lg-4"&gt<br>
+&lt;/div&gt, to znači u jednom redu ću zauzeti četiri polja za jednu kolonu za lg (large screen).<br>
+<code>ImageHover.css ide uz bootstrap, služi za to kako želim da mi se slika ponaša.</code><br>
+Treba proučiti zvaničan sajt bootstrap-a i videti šta sve tamo postoji.</p>
+</div>
+
+<br>
+<div class="dodatak">
+				<h2>Java Script</h2>
+<br>
+<p>JS je <span><q>scripting</q></span> programski jezik, sa HTML-om i CSS-om čini jednu celinu pravljenja i manipulisanja web strnicama. jQueri je ekstenzija za javaScript. Uz pomoc javaScript-a web stranice postaju dinamičnije i interaktivnije. JavaScript kod se čuva na serveru ali server šalje celu stranicu browseru (html, css, js), zato se zove <q>Client Side Language</q>. EcmaScript je u stvari JavaScript, Ecma se isto ponaša u svim browserima. Java nije isto što i JavaScript.<br>
+Gde implementirati javaScript? Java Script je običan tekst, to znači da mu ne treba kompajler. Kompajleri su programi koji prevode kod. Kod će biti smešten u html fajlu, između otvorenog i zatvorenog script taga, ali je bolje da imam poseban fajl, main.js, i link ka fajlu u script tagu. <br><br>
+&lt;script type="text/javascript" src="main.js"&gt&lt;/script&gt</p>
+</div>
+
+<br>	
+<div class="dodatak">
+				<h2>jQuery</h2>
+				<br>
+<p>jQuery je najbolji način za pisanje javaScript, sa zvanične strane uzimam kod i uključiću ga u moj projekat, mogu i da  preuzmem jQuery i smestim na moj kompjuter. jQuery je <span>javaScript biblioteka</span>. Kompatibilan je sa CSS3, u svakom brauzeru će isto da se ponaša, ne moram da razmišljam da li će nešto da izgleda drugačije na drugom browseru. Na zvaničnom sajtu, mogu da preuzmem fajl (download uncompresed) i da ga linkujem u head-u <br>
+	&lt;script src="jquery.js"&gt&lt;/script&gt.<br>
+	 Queri znači selektovati nešto, kako doći do DOM (Document Object Model) elementa. Sintaksa jQuery-a je:<br>
+	 <b> jQueri('h1').css('color','red');</b><br> i promeniće boju mog h1.<br> Drugi način da uključim jQueri u moj projekat je da linkujem sa Hosted Library, tu se nalaze sve popularne jS biblioteke, kopiram kod i ubacim ga u source skript taga. U istom fajlu mogu da pišem i jS i jQuery kod. Dovoljno je da koristim dolar znak $, jer je za funkciju, function jQuery(){}, postavljena varijabla, var $ = jQuery. Na sajtu jQueryIPA postoje sve funkcije koje mogu da se koriste.</p>
+	 </div>
+	 
+	 <br><div class="dodatak">
+				<h2> EcmaScript</h2>
+				<br>
+<p> Ecma Script v6 je skup svih najboljih funkcija iz svih programskih jezika na jednom mestu. U EcmaScript se umesto apostrofa i navaodnika koriste <q>back-ticks</q>, dve tačkice na dugmetu ispod esc na tastaturi. Ranije sam nešto pisala ("Na stari nacin:" + imevarijable + "."), a u ecma ('novi nacin sa back-ticks:' $(imevarijable).);, rezultat će biti isti. Između dva apostrofa 'use strict' na početku koda, me uslovljava da koristim pravila pisanja, to je zahtev od browsera. Skraćenica let je isto sto i var, varijabla, samo nije vidljiva za global scope, nego za function scope.</p>
+</div>
+
+<br><div class="dodatak">
+				<h2>XML</h2>
+<br>
+<p>Extensible Markup Language, je proširena verzija html-a. Kreiran je za čuvanje i prenos podataka, i što je najvažnije, koriste ga svi programski jezici. Sintaksa je slična kao i kod html-a, imam jedan root tag, ostali su ugneždeni. Svi tagovi, atributi i vrednosti imaju proizvoljna imena, tj. ona koja im sama dodelim.<br>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt je obavestenje za browser da ocekuje main.xml fajl. <br>
+AJAX XML DTD je gramatika,<br>
+&lt;!DOCTYPE note[&lt;element note(to, from, heading, body)&gt           <br>
+ &lt;!element to(#pcdata)&gt<br>
+ &lt;!element from(#pcdata)&gt<br>
+ &lt;!element heading(#pcdata)&gt<br>
+ &lt;!element body(#pcdata)&gt]&gt, to znači da će moj dokument imati note element za root, i unutar njega elemente to, from, heading, body, koji će biti nekog tipa podataka (pcdata). To je primenjeno u XHTML, služi za notifikacije kada se prijavljujem na neki sajt, XML aplikacija je RSS kratka verzija neke vesti koja vodi na link te vesti.</p>
+ </div>
+
+<br><div class="dodatak">
+				<h2>AJAX</h2>
+<br>
+<p>Asynchronous JavaScript and XML je komunikacija sa serverom bez reload-a stranice, to znači ako kliknem na <q>like</q> ili napišem komentar automatski postaje vidljiv na strani, to omogućava XMLHttp objekt. Novi način pristupa, služi se da uz pomoć jS uzme podatke od XML putem servera. AJAX dobro komunicira i sa JSON formatom. jQuery.ajax() je metod (funkcija). U html fajlu će se nalaziti link do jQuery.js i main.js. U main.js fajlu moram da upišem jQueri(document).<wbr>ready(function){ fajl.xml, njegov link kopiram ovde};.<br> Za ready() funkciju ubacim $.ajax(), za URL ubacim adresu koju sam kopirala, type="get"  i dataType="xml".</p>
+</div>
+
+<br><div class="dodatak">
+				<h2>JSON</h2>
+<br>
+<p>Java Script Object Notation i XML su osnovne tehnologije kada se razmenjuju podaci, share. JSON je inspirisan jS objektima i koriste ga svi IT jezici. JSON objekt mora da bude unutar vitičastih zagrada {} i navodnika. Brojevi, boolean i null ne moraju u navodnike. Može da bude string, array[ ], numbers, boolean, null, ali ne moze da sadrži funkciju. JSON služi da
+dobijem podatke putem web-a. Ima svoju zvaničnu stranicu.</p>
+</div>
+
+<br><div class="dodatak">
+				<h2>Command line</h2>
+<br>
+<p> U svakom kompu ima, za windows, command prompth ili power shell. Start, search bar ukucam power i otvorim. Ja bih pre bilo kakvog učenja kodiranja naučila kako se koristi command line. Kad otvorim command prompt videću gde se nalazim trenutno, komanda ls (nije broj 1 nego malo slovo L) će mi prikazati sve što imam u tom folderu. Clear služi za brisanje ekrana, komanda je cls. Cd je komanda kojom se menja direktorijum, tako što ću upisati ime foldera (prva slova imena + tab je prečica), ovako treba da izgleda >cd.\desktop\. Mkdir, make directori, mkdir imeKojeŽelim i napraviću novi folder. Komanda cd.\imeKojeŽelim me vodi u taj novi folder. Pwd, print working directori, tu vidim path tj. gde se nalazim. >New-Item index.html će u mom novom folderu napraviti html fajl, i tako od sada treba da pravim foldere i fajlove, i odatle da ih otvaram u text editoru. >New > brackets. ce mi otvoriti ceo folder u brackets text editoru, a >brackets.\index.html samo html fajl.<br>
+Ja sam do sada znala da koristim command prompt samo za gledanje Star Wars.</p>
+</div>
+
+<br><div class="dodatak">
+				<h2>Node.js</h2>
+<br>
+<p>Node.js sam već pomenula, treba da se instalira zato što uz pomoć node.js budu dostupne mnoge stvari u command prompt-u koje olakšavaju kodiranje. To je ono što ja znam. Unesem u command prompt new > bower install jquery, zatim sa ls će mi se pokazati bower_components unutar mog foldera i tu će mi se nalaziti jQueri koji onda mogu direktno da linkujem , ne moram više da ga linkujem ka eksternim - google libraryes.<br>
+Bower install angular, tako će mi biti sve spremno da kucam angular aplikacije. Isto tako ću bootstrap linkovati.<br>
+
+	Cd.. komanda vraća u prethodni folder<br> npm je node paket menadzer. Power shell je isto što i command prompt samo što umesto ls  koristi dir komandu, sve ostalo je isto. Mac i linux koriste terminal.</p>
+	</div>
+
+<br><div class="dodatak">
+				<h2>Text editor</h2>
+				<br>
+<p>Uglavnom su svi tekst editori dobri, ja koristim Brackets a najčesce Sublime text. Brackets je baš fokusiran na web dizajn, u ExtensionMng mogu naći razne dopune koje olakšavaju kucanje koda, nalazi se sa desne strane. Postoji i live preview, veza sa google chrom-om. Na ctrl + e dobijam instant edit, tu mogu direktno da stilizujem i pratim uživo promene, esc  za izlaz.<br> Sublime je super, ima multi kursor ctrl + klik na svako mesto gde želim isti tekst da pišem. Paketi u sublime koje ja koristim su :
+  ctrl + shift + p (ovim otvaram settings) => instal pac control, restartujem sublime.<br> Zatim ctrl + shift + p => instal paket emmet => ok, kad imam instaliran emmet mogu da kucam .ime + tab i automatski ću dobiti div klase ime, ili li*5 + tab dobiću pet list item.<br>
+  Ctrl + shift + p => instal color sublime.<br>
+   Ctrl + shift + p => instal teme, kad se učita onda mogu da izaberem onu koja mi odgovara. Isti postupak i za material teme pa mogu da izaberem neke file icons, pa onda da aktiviram ctrl + shift + p => material activate theme. <br>
+   Sledeće ću instalirati jQueri plug-in, ctrl + shift + p => instal (nadji paket jQuery), tako da ću sada u main.js moci da kucam dolar znak $ + tab i otvara mi ceo kontekst.<br>
+    Sledeće, ctrl + shift + p => instal advance new file, ovo omogućava da ne moram new file => new folder nego ctrl + alt + n. U tekst editoru dole na liniji ću imati mogućnost da kucam css\main.css i to ce mi kreirati i folder i fajl za Css.<br>
+     Js Beauty ctrl + shift ili alt + f će mi srediti kod pravilno kako treba da bude napisan. <br>
+     Ima još puno paketa koji olakšavaju pisanje koda. </p>
+     </div>
+     <br><div class="dodatak">
+				<h2>Live server</h2>
+<br>
+<p>Kad se nalazim u folderu na šift i desni klik otvorim command window => live server, i onda mogu da otvorim moje fajlove i za svaku promenu koju unesem ctrl + s i promena se vidi, ne moram da uradim reload stranice. Ovo je super, još je bolje ako povežem dva monitora zbog preglednosti (daleko sam ja od toga <img src="http://2.bp.blogspot.com/-MCzmPQoz7Qw/TZcivhHGiTI/AAAAAAAAAUw/2UhfpBQJxvE/s1600/Smiley+Book.jpg" width="50" height="50" alt="smile">). Ali pre sveg moram da imam instaliran live server, a za to mi je poterban node.js, npm live server nađem na netu, u bilo koji command line  kucam >npm install - g live-server, klik na enter i biće instalirano. Pokrećem ga tako što u command line kucam live server.</p>
+
+</div>
+<br><div class="dodatak">
+				<h2>Git i GitHub</h2>
+<br>
+<p>
+ Git je <span>softver</span>, source version kontrol (omogućava kretanje kroz faze) i collaboration (saradnja više programera). Instaliranje Git-a, preuzmem ga sa zvanične stranice , desni klik => git Bash here, to je novi oblik terminala. Sada u njemu treba da proverim da li sam instalirala git tako sto ću ukucati <br>git--version, na isti način mogu i u command prompt ili power shell da proverim. <br><br>
+	Na GitHub moram da se registrujem, tu onda mogu da smestim moj kod. BitBucket je sličan kao GitHub. GitHub je <span>web sajt</span> baziran na osnovama softvera Git. Tu mogu da gledam tuđe fajlove, da ih preuzmem, da radim ja nešto na njima, da ih vratim vlasniku sa promenama. Source version control omogućava kretanje kroz grane (branches). Kad postavim neki folder on se nalazi na master branch, kad izvršim neku promenu onda to smestam na druge grane.  Moram da uradim sinhronizaciju gitHub, sa lokalnog da prebaci na globalni.<br><br>
+
+Npm install angular bootstrap angular- route, (node.js), komanda, je najlakši način da instaliram frameworks, da ne moram da ih skidam i linkujem ručno. Jedino što će onda biti dosta fajlova koje nije potrebno da neko, ko želi da preuzme moj kod, preuzima. To se rešava time što se napravi folder .gitignore, i opet sinhronizacija.<br><br>
+ Konačno, strana se postavlja na GitHub Pages, to je besplatni host, <span>server</span>.</p>
+
+</div>
+<br>
+<hr><hr>
+<br>
+<p> 
+Možda bi ovo sve nekome zvučalo konfuzno, ja razumem jer sam malo učila, ali zato postoji Danilo koji je sve objasnio na najbolji način. Nisam ja bas ni sigurna da li smem da pominjem tako imena, ali nadam se da smem.</p> <br>
+
+
+
+</div>
+<script type="text/javascript" src="main.js"></script><!--veza html sa javaScript -->
+</body>
+</html>

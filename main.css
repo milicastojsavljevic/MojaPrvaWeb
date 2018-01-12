@@ -1,0 +1,229 @@
+	
+*{margin: 0; padding: 0;}
+
+div{box-sizing:border-box;}
+
+#header{	
+	height:20%;
+	width:100%;
+	text-align: center;
+	color:white;
+	position: relative;
+	line-height: 100px;
+	text-shadow:3px 3px 5px black;
+	font-family: Bradley Hand ITC;
+
+    background-color: rgb(20, 129, 135);  /* za browsers koji ne podrzavaju gradiente */
+    background: -webkit-linear-gradient(left top, rgb(20, 129, 135)30%, white, rgb(118, 53, 183)); /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgb(20, 129, 135)30%, white, rgb(118, 53, 183)); /* Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgb(20, 129, 135)30%, white, rgb(118, 53, 183)); /*  Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgb(20, 129, 135)30%, white, rgb(118, 53, 183)); /* Standardna sintaksa */
+
+}
+
+#content{
+	width: 100%;
+	}
+
+#glavno{
+	width: 70%;
+	border:3px solid white;
+	padding: 50px;
+	position: relative;
+	float:left;
+	}
+
+/*Pokretni div sa mojim imenom, Animacija*/
+#ime{
+	color:white;
+	background-color:#ed0e90;
+	text-align: center;
+	font-family: Bradley Hand ITC;
+	width:100px;
+	height:40px;
+	padding:10px;
+	font-weight: bold;
+	margin: 30px;
+	position: relative;
+
+	clear: both;
+	border-radius: 5px; 
+	 -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+   -webkit-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+    
+}
+/*kretanje diva ime*/
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+	0%   {background-color:#ed0e90; left:0px; top:0px;}
+    
+    50%  {background-color:#008080; left:74%; top:0px;}
+   
+    100% {background-color:#ed0e90; left:0px; top:0px;}
+  
+}
+
+/* Standard syntax */
+@keyframes example {
+     0%   {background-color:#ed0e90; left:0px; top:0px;}
+    
+    50%  {background-color:#008080; left:74%; top:0px;}
+   
+    100% {background-color:#ed0e90; left:0px; top:0px;}
+ }
+
+/*sat*/
+	/*#timer{
+	width: 200px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 23px;
+	position: relative;
+	float: right;
+	color:black;
+	}
+	*/
+#canvas{
+	float:right;
+	border-radius: 10px;
+	margin-left: 5px;
+
+}
+/*tu mi se nalaze reklame*/
+#sporedno{
+	width: 30%;
+	float: left;
+	border:1px solid white;
+}
+
+#reklama1{/*c*/
+	width:20%;
+	color: white;
+	height: 100px;
+	border:1px solid white;
+	background-color: rgba(18, 18, 135, 0.5);
+	position: relative;
+	margin: 30px auto;
+	box-shadow: 5px 5px 5px rgb(18, 18, 135);
+	min-width: 150px;
+	}
+
+#reklama2{/*d*/
+	width:20%;
+	color:white;
+	height: 100px;
+	border:1px solid white;
+	background-color: rgba(118, 53, 183, 0.5);
+	margin: 30px auto;
+	position: relative;
+	box-shadow: 5px 5px 5px rgb(118, 53, 183);
+	min-width: 150px;
+}
+
+#reklama3{/*w*/
+	width:20%;
+	color:white;
+	height: 100px;
+	border:1px solid white;
+	background-color: rgba(22, 204, 92, 0.5);
+	position: relative;
+	margin: 30px auto;
+	box-shadow: 5px 5px 5px rgb(22, 204, 92);
+	min-width: 150px;
+}
+
+.link{
+	color:white;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#reklama{
+	box-sizing:border-box;
+}
+
+.close{/*div za x kojim cu zatvarati reklamu*/
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	color:gray;
+	cursor: pointer;
+	float:right;
+	text-align: center;
+	margin-top: 3px;
+}
+
+h2{
+	text-align: center;
+	font-size: 22px;
+}
+
+a{
+	text-decoration: none;
+	color:#ed0e90;
+}
+a:hover{
+	text-decoration: none;
+	background-color:#ed0e90;
+	color: white;
+}
+p{
+	font-size: 18px;
+	color: rgb(48, 50, 53);
+}
+
+#uvod{
+	position: relative;
+	width:100%;
+	clear:both;
+	box-sizing:border-box;
+	padding:0px 50px;
+}
+code{
+	font-size: 14px;
+}
+span{
+	background-color:rgba(20, 129, 135, 0.2);
+}
+
+/*za mobilne telefone*/
+@media only screen and (max-width: 620px){
+	#glavno, #sporedno {width: 100%;}
+	#ime{display:none;
+	}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+
+#uvod, #content, #glavno, #sporedno{
+	margin: 0px;
+	padding: 10px 5px;
+}
+}
+/*kada selektujem neku rec na sajtu promenice stil*/
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: rgb(20, 129, 135);
+}
+
+::selection {
+    color: white;
+    background: rgb(20, 129, 135);
+}
+.dodatak{
+	border:1px solid gray;
+	border-bottom-left-radius:25px;
+	border-top-right-radius:25px;
+	padding:30px 20px 20px 20px;
+	box-shadow:5px 3px 5px gray;
+}
+/*body{
+	background-color: rgb(242, 236, 198);
+}*/
