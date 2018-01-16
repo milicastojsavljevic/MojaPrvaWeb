@@ -98,6 +98,8 @@ div{box-sizing:border-box;}
 	width: 30%;
 	float: left;
 	border:1px solid white;
+	background-image: url('4.jpg');
+	background-size: cover;
 }
 
 #reklama1{/*c*/
