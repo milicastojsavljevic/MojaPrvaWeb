@@ -229,3 +229,21 @@ p{
 /*body{
 	background-color: rgb(242, 236, 198);
 }*/
+
+#myBtn {
+    display: none; /*default */
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; /* pozicija */
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: rgb(20, 129, 135); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+}
+#myBtn:hover {
+    background-color: rgb(118, 53, 183); 
+}
