@@ -201,7 +201,8 @@ span{
 	#sporedno{position:absolute; 
 		z-index:1;
 	width:100%;
-background-image:none;}
+background-image:none;
+	background-color:transparent;}
 p{
     text-align: justify;
     text-justify: inter-word;
