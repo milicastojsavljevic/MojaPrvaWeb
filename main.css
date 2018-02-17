@@ -198,7 +198,10 @@ span{
 	#glavno {width: 100%;}
 	#ime, #sporedno{display:none;
 	}
-	#reklama{position:absolute;}
+	#reklama1, #reklama2, #reklama3 {position:absolute; 
+		z-index:1;
+	width:100%;
+	height:100px;}
 p{
     text-align: justify;
     text-justify: inter-word;
