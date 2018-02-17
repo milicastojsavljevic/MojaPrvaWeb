@@ -196,7 +196,7 @@ span{
 /*za mobilne telefone*/
 @media only screen and (max-width: 620px){
 	#glavno, #sporedno {width: 100%;}
-	#ime{display:none;
+	#ime, #sporedno{display:none;
 	}
 
 p{
