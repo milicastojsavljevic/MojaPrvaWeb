@@ -195,10 +195,10 @@ span{
 
 /*za mobilne telefone*/
 @media only screen and (max-width: 620px){
-	#glavno, #sporedno {width: 100%;}
+	#glavno {width: 100%;}
 	#ime, #sporedno{display:none;
 	}
-
+	#reklama{position:absolute;}
 p{
     text-align: justify;
     text-justify: inter-word;
