@@ -196,9 +196,9 @@ span{
 /*za mobilne telefone*/
 @media only screen and (max-width: 620px){
 	#glavno {width: 100%;}
-	#ime, #sporedno{display:none;
+	#ime{display:none;
 	}
-	#reklama1, #reklama2, #reklama3 {position:absolute; 
+	#sporedno{position:absolute; 
 		z-index:1;
 	width:100%;
 	height:100px;}
